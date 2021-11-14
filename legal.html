@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <script src="https://kit.fontawesome.com/2ca48ba5ba.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/design.css">
+    <title>Elevar | Legal Notice</title>
+    <style>
+      .xx1{
+        width: 35%;
+      }
+      h3{
+        font-weight: 700;
+      }
+      h4{
+        opacity: .8;
+        padding-left: 5px;
+      }
+      .cc1{
+        font-weight: 900; 
+        font-size: 75px;
+      }
+      @media (max-width: 480px){
+        .xx1{
+          width: 100%;
+          padding-left: 20px;
+          padding-right: 10px;
+        }
+        .cc1{
+          font-size: 60px;
+          font-family: calibri;
+        }
+      }
+    </style>
+</head>
+<body>
+    <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-card w3-white w3-row" id="myNavbar">
+      <a href="#" class="w3-bar-item w3-col m2  w3-wide" style="padding-top: 10px;padding-left: 20px;"><img src="images/logo.png" alt="not_supported" width="50%"></a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-hide-small w3-col m10" style="padding-top: 5px; padding-bottom: 1%;">
+        <a href="login.html" class="w3-bar-item w3-hover-text-blue w3-right nav_text" >Login</a>
+        <a href="#contactus" class="w3-bar-item w3-hover-text-blue w3-right nav_text" >Contact Us</a>
+        <a href="signin.html" class="w3-bar-item w3-hover-text-blue w3-right nav_text">Try Demo</a>
+        <a href="#" class="w3-bar-item w3-hover-text-blue w3-right nav_text">Home</a>
+      </div>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+  
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+  
+  <!-- Sidebar on small screens when clicking the menu icon -->
+  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-bottom w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close &times;</a>
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+    <a href="signin.html" onclick="w3_close()" class="w3-bar-item w3-button">Try Demo</a>
+    <a href="login.html" onclick="w3_close()" class="w3-bar-item w3-button">Login</a>
+    <a href="#contactus" onclick="w3_close()" class="w3-bar-item w3-button">Contact Us</a>
+  </nav>
+
+  <div class="w3-container display" style="padding:150px 16px;padding-bottom: 100px;">
+    <div class="display xx1">
+        <h1 class="cc1">Legal Notice</h1>
+        <h3>Easy Accounting and Outsourcing Private Limited</h3>
+        <h4>307/310, 3rd Floor, D Wing Shiv Ashish Building, Plot No 66 S.V Road, Andheri West Mumbai-400058 India</h4>
+        <h3>Chief executive officer</h3>
+        <h4>Jyoti Singh</h4>
+        <h3>Managing Directors</h3>
+        <h4>Priyanka Jain<br>Pooja Ratanlal Chordia</h4>
+        <h3>PAN Number</h3>
+        <h4>AAECE3109P</h4>
+        <h3>GST</h3>
+        <h4>27AAECE3109P1ZF</h4>
+        <h4 style="padding-left: 0px;">We assume no liabilty for the content of website linked to us<br> The owner of these linked website take sole responsibilty for their contants. </h4>
+    </div>
+</div>
+  <!-- Footer -->
+  <footer class="w3-display-container w3-row" style="padding-top:64px;background:#0f0a4d;color:white">
+    <div class="w3-col w3-center l4 m4 s6">
+      <img src="images/footer logo.png" alt="not_supported" >
+    </div>
+
+    <div class="w3-col l4 m4 s3">
+      <p style="font-weight: 800;font-size: 17px;">Company</p>
+        <a href="#" class="footer_text">Home</a><br>
+        <a href="signin.html" class="footer_text">Signin</a><br>
+        <a href="login.html" class="footer_text">Login</a><br>
+        <a href="legal.html" class="footer_text">Legal Notice</a>
+    </div>
+
+    <div class="w3-col l4 m4 s3">
+      <p style="font-weight: 800;font-size: 17px;">Useful Links</p>
+        <a href="https://www.linkedin.com/company/accounting-elevar" target="_blank" class="footer_text"><i class="fa fa-linkedin w3-hover-opacity"></i> Linkedin</a><br>
+        <a href="#" class="footer_text"><i class="fa fa-facebook-official w3-hover-opacity"></i> Facebook</a><br>
+        <a href="#" class="footer_text"><i class="fa fa-instagram w3-hover-opacity"></i> Instagram</a><br>
+        <a href="#" class="footer_text"><i class="fa fa-twitter w3-hover-opacity"></i> Twitter</a>
+    </div>
+    
+    <div class="w3-container w3-center w3-col m12" style="margin-top: 20px;background-color: #0b072f;height:45px">
+      <p>© Elevar Accounting All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script>
+      // Toggle between showing and hiding the sidebar when clicking the menu icon
+    var mySidebar = document.getElementById("mySidebar");
+    function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+    } else {
+        mySidebar.style.display = 'block';
+    }
+    }
+
+    // Close the sidebar with the close button
+    function w3_close() {
+        mySidebar.style.display = "none";
+    }
+  </script>
+    
+</body>
+</html>

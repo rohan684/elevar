@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <script src="https://kit.fontawesome.com/2ca48ba5ba.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/design.css">
+    <title>Home</title>
+    <style>
+      .bgimg-1 {
+          background-position: center;
+          background-size: cover;
+          background-image: url("images/bkg.jpg");
+          min-height: 95%;
+      }
+      .bgimg-2{
+        background-position: center;
+        background-size: cover;
+        background-image: url("images/bkg2.svg");
+        min-height: 95%;
+      }
+      .backg
+      {
+        position: absolute;
+        bottom: 0;
+        background: rgb(0, 0, 0); /* Fallback color */
+        background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+        color: #f1f1f1;
+        width: 60%;
+        padding: 20px;
+        text-align: center;
+        animation: media;
+      }
+    </style>
+</head>
+<body>
+    <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-card w3-white w3-row" id="myNavbar">
+      <a href="#" class="w3-bar-item w3-col m2  w3-wide" style="padding-top: 10px;padding-left: 20px;"><img src="images/logo.png" alt="not_supported" width="50%"></a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-hide-small w3-col m10" style="padding-top: 5px; padding-bottom: 1%;">
+        <a href="login.html" class="w3-bar-item w3-hover-text-blue w3-right nav_text" >Login</a>
+        <a href="#contactus" class="w3-bar-item w3-hover-text-blue w3-right nav_text" >Contact Us</a>
+        <a href="signin.html" class="w3-bar-item w3-hover-text-blue w3-right nav_text">Try Demo</a>
+        <a href="#" class="w3-bar-item w3-hover-text-blue w3-right nav_text">Home</a>
+      </div>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+  
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+  
+  <!-- Sidebar on small screens when clicking the menu icon -->
+  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-bottom w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close &times;</a>
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+    <a href="signin.html" onclick="w3_close()" class="w3-bar-item w3-button">Try Demo</a>
+    <a href="login.html" onclick="w3_close()" class="w3-bar-item w3-button">Login</a>
+    <a href="#contactus" onclick="w3_close()" class="w3-bar-item w3-button">Contact Us</a>
+  </nav>
+
+  <!--Header section with image-->
+  <header class="bgimg-1 w3-display-container display">
+    <div class="w3-content w3-display-container w3-animate-zoom">
+      <h1 class="header_text w3-center">Automate your Accounting with us</h1>
+      <h4 class="header_text2 w3-center">Elevar is a cloud-based programming that accompanies a document coordinator that your customers will utilize 
+        and incorporations that take out manual passage into your bookkeeping programming.</h4>
+        <div class=" w3-center">
+          <p><a href="#" class="w3-button w3-round-xxlarge w3-blue w3-padding-large w3-large w3-center w3-margin-top w3-hover-teal">Try Now!</a></p>
+        </div>
+    </div>
+  </header>
+  <!--Section one-->
+  <div class="w3-container w3-light-grey" style="padding: 70px 15px;">
+    <h3 class="w3-center aa1">Features</h3>
+    <h5 class="w3-center aa2">Industry-driving Features and Technology</h5>
+    <h6 class="w3-center aa3 display">Elevar's way of thinking is to be inconceivably adaptable. Do you currently like your current frameworks and instruments? 
+      Our foundation can incorporate with 1000+ applications.</h6>
+    <div class="w3-container display" style="padding-top: 20px;">
+      <div class="aa4 w3-col m7" style="border: 2px solid #0f0a4d; border-radius: 20px;overflow: hidden;">
+        <img src="images/imgs1.png" height="90%" width="90%" id="getImage" class="display" style="padding-top:20px;" alt="not_supported">
+      </div>
+      <div class="w3-col m5" style="padding-left: 20px;padding-right: 50px;">
+        <div class="w3-col m12" class="w3-center"> 
+          <img src="images/logo.png" alt="not_supported" width="40%" class="display" style="margin-bottom: 20px;padding-top: 10px;">
+        </div>
+        <button class="w3-button btn2 display" onclick="imageChange(1)" style="margin-top:10%;" id="btn1">
+            <h5 class="aa5"><i class="far fa-edit"></i> Overcome the Costly Errors With AI</h5>
+        </button>
+        <button class="btn2 w3-button  display" onclick="imageChange(2)" id="btn2">
+            <h5 class="aa5"><i class="fas fa-hand-holding-usd"></i> Cut The Back-and Forth in Half</h5>
+        </button>
+        <button class="btn2 w3-button  display" onclick="imageChange(3)" id="btn3">
+            <h5 class="aa5"><i class="fab fa-accusoft"></i> Automate Manual Entry</h5> 
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!--FAQ section-->
+  <div class="w3-container" style="padding: 70px 15px;">
+    <h3 class="w3-center aa1">Frequently Asked Question</h3>
+    <div class="w3-col m5"> 
+      <img src="images/FAQ.gif" alt="not_supported" width="80%" class="display">
+    </div>
+    <!--Common questions-->
+    <div class="w3-col m7" style="padding-top: 70px;">
+      <button class="accordion">Which Accounting Software Do You Work With?</button>
+        <div class="panel">
+          <p>We right now support ATX™, ProSeries, Drake, and UltraTax as of now. Lacerte and Axcess are just around the corner!</p>
+        </div>
+
+        <button class="accordion">Can I Use With My Existing Software?</button>
+        <div class="panel">
+          <p>Our product can incorporate with most present-day programming like Sharefile, Dropbox, FormStack, Zapier, and so forth Elevar can fill in as a solitary wellspring of truth, assisting you with interfacing every one of the moving pieces together.</p>
+        </div>
+
+        <button class="accordion">How Long Does It Take To Get  This All Running?</button>
+        <div class="panel">
+          <p>24-48 hours. Simply send us the reinforcement document for your expense programming and we will deal with the rest.</p>
+        </div>
+    </div>
+  </div>
+  
+  <!--features section-->
+  <div class="w3-container w3-light-grey" style="padding: 40px 15px;">
+    <h3 class="w3-center aa1">Resources</h3>
+    <div class="w3-row-padding">
+      <div class="w3-col m4 s12">
+        <div class="w3-card-4 cards" style="padding-bottom:20px;">
+          <div >
+            <img src="images/Article1.jpg" alt="not_supported" class="articleimages">
+          </div>
+          <div>
+            <p class="image_text">Comparing ProSeries vs ATX vs Drake vs UltraTax CS</p>
+            <p class="image_text2">All expense programming have distinctive item includes, diverse estimating, various things they are acceptable at.</p>
+          </div>
+          <a href="#" class="read_article">Read Article</a>
+        </div>
+      </div>
+      <div class="w3-col m4 s12">
+        <div class="w3-card-4 cards" style="padding-bottom:20px;">
+          <div>
+            <img src="images/Article2.jpg" alt="not_supported" class="articleimages">
+          </div>
+          <div>
+            <p class="image_text">Should my firm move to the cloud ?</p>
+            <p class="image_text2">With Covid-19 reaching a conclusion, are there valid justifications why you should in any case move to the cloud?</p>
+          </div>
+          <a href="#" class="read_article">Read Article</a>
+        </div>
+      </div>
+      <div class="w3-col m4 s12">
+        <div class="w3-card-4 cards" style="padding-bottom:20px;">
+          <div>
+            <img src="images/Article3.jpg" alt="not_supported" class="articleimages">
+          </div>
+          <div>
+            <p class="image_text">Traditional OCR vs AI powered OCR</p>
+            <p class="image_text2">You may have known about OCR innovation for some time now. what is actually, and how does AI-based OCR contrast?</p>
+          </div>
+          <a href="#" class="read_article">Read Article</a>
+        </div>
+      </div>
+      <button class="image_btn display">See All Articles</button>
+    </div>
+  </div>
+
+  <!--Contact us section-->
+  <div class="w3-display-container bgimg-" style="padding: 40px 15px;background-color: #21D4FD;
+  background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+color:white;" id="contactus">
+    <h1 class="w3-center" style="font-weight: 900; font-size: 50px; ">Contact Us</h1>
+    <div class="display" style="width: 100%;">
+      <table style="margin-left: 10%;">
+        <form action="#" method="get">
+            <tr class="w3-row">
+                <td class="w3-half"><input type="text" placeholder="Name*" name="Name" class="input1" /required></td>
+                <td class="w3-half"><input type="email" placeholder="Email*" name="Email" class="input2" /required></td>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="Subject*" name="Subject" class="input2" /required></td>
+            </tr>
+            <tr>
+                <td><textarea name="Message" cols="130" rows="8" placeholder="Message*" class="input3" /required></textarea></td>
+            </tr>
+            <tr>
+              <td><span><a href="#"></a></span></td>
+            </tr>
+        </form>
+    </table>
+    </div>
+  </div>
+  <!--Subscribe us-->
+  <div class="w3-container" style="padding: 40px 15px;">
+    <div class="w3-half w3-center">
+      <h2 style="font-weight: 800;">Subscribe Our Newsletter</h2>
+      <h5 style="margin-top: -20px;">We won't send any kind of spam</h5>
+    </div>
+    <div class="w3-half w3-center">
+      <form class="sbsform" action="#" method="post">
+        <input type="text" placeholder="Drop Your Emails" name="email" /required class="form_input">
+        <button class="frm_btn">Subscribe <i class="fa fa-arrow-right"></i></button>
+      </form>
+      
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-display-container w3-row" style="padding-top:64px;background:#0f0a4d;color:white">
+    <div class="w3-col w3-center l4 m4 s6">
+      <img src="images/footer logo.png" alt="not_supported" >
+    </div>
+
+    <div class="w3-col l4 m4 s3">
+      <p style="font-weight: 800;font-size: 17px;">Company</p>
+        <a href="#" class="footer_text">Home</a><br>
+        <a href="signin.html" class="footer_text">Signin</a><br>
+        <a href="login.html" class="footer_text">Login</a><br>
+        <a href="legal.html" class="footer_text">Legal Notice</a>
+    </div>
+
+    <div class="w3-col l4 m4 s3">
+      <p style="font-weight: 800;font-size: 17px;">Useful Links</p>
+        <a href="https://www.linkedin.com/company/accounting-elevar" target="_blank" class="footer_text"><i class="fa fa-linkedin w3-hover-opacity"></i> Linkedin</a><br>
+        <a href="#" class="footer_text"><i class="fa fa-facebook-official w3-hover-opacity"></i> Facebook</a><br>
+        <a href="#" class="footer_text"><i class="fa fa-instagram w3-hover-opacity"></i> Instagram</a><br>
+        <a href="#" class="footer_text"><i class="fa fa-twitter w3-hover-opacity"></i> Twitter</a>
+    </div>
+    
+    <div class="w3-container w3-center w3-col m12" style="margin-top: 20px;background-color: #0b072f;height:45px">
+      <p>© Elevar Accounting All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <!--Javascript-->
+  <script>
+  // Toggle between showing and hiding the sidebar when clicking the menu icon
+    var mySidebar = document.getElementById("mySidebar");
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+    } else {
+        mySidebar.style.display = 'block';
+    }
+    }
+
+    // Close the sidebar with the close button
+    function w3_close() {
+        mySidebar.style.display = "none";
+    }
+  // images changes on button click
+    function imageChange(position)
+    {
+      var Image_Id = document.getElementById('getImage');
+      var btn1_id = document.getElementById('btn1');
+      var btn2_id = document.getElementById('btn2');
+      var btn3_id = document.getElementById('btn3');
+      if(position==1)
+      {
+        Image_Id.src = "images/imgs1.png";
+        btn1_id.style.background='#0f0a4d';
+        btn1_id.style.color='white';
+
+        btn2_id.style.background='white';
+        btn2_id.style.color='black';
+
+        btn3_id.style.background='white';
+        btn3_id.style.color='black';
+
+      }
+      else if(position==2)
+      {
+        Image_Id.src = "images/fea2.gif"
+        btn2_id.style.background='#0f0a4d';
+        btn2_id.style.color='white';
+
+        btn1_id.style.background='white';
+        btn1_id.style.color='black';
+
+        btn3_id.style.background='white';
+        btn3_id.style.color='black';
+
+      }
+      else
+      {
+        Image_Id.src = "images/imgs2.png"
+        btn3_id.style.background='#0f0a4d';
+        btn3_id.style.color='white';
+
+        btn2_id.style.background='white';
+        btn2_id.style.color='black';
+
+        btn1_id.style.background='white';
+        btn1_id.style.color='black';
+
+      }
+    }
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      });
+    }
+  </script> 
+</body>
+</html>
