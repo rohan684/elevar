@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <script src="https://kit.fontawesome.com/2ca48ba5ba.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/design.css">
+    <link rel="stylesheet" href="style/design2.css">
+    <title>Traditional OCR vs AI-powered OCR</title>
+    <style>
+        p{
+            font-weight: 500;
+        }
+        h1{
+            font-weight: 900;
+            color: #0f0a4d;
+            font-size: 28px;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar (sit on top) -->
+  <div class="bar_color">
+    <div class="w3-bar w3-row" id="myNavbar">
+      <a href="#" class="w3-bar-item w3-col m2  w3-wide" style="padding-top: 10px;padding-left: 20px;"><img src="images/logo.png" alt="not_supported" class="logo"></a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-hide-small w3-col m10" style="padding-top: 10px; padding-bottom: 1%;">
+        <a href="login.html" class="w3-bar-item w3-hover-text-blue w3-right nav_text" >Login</a>
+        <a href="index.html#contactus" class="w3-bar-item w3-hover-text-blue w3-right nav_text" >Contact Us</a>
+        <a href="signin.html" class="w3-bar-item w3-hover-text-blue w3-right nav_text">Try Demo</a>
+        <a href="index.html" class="w3-bar-item w3-hover-text-blue w3-right nav_text">Home</a>
+      </div>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+  
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+        <i class="fa fa-bars" style="color: white;"></i>
+      </a>
+    </div>
+  </div>
+  
+  <!-- Sidebar on small screens when clicking the menu icon -->
+  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-bottom w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close &times;</a>
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+    <a href="signin.html" onclick="w3_close()" class="w3-bar-item w3-button">Try Demo</a>
+    <a href="login.html" onclick="w3_close()" class="w3-bar-item w3-button">Login</a>
+    <a href="index.html#contactus" onclick="w3_close()" class="w3-bar-item w3-button">Contact Us</a>
+  </nav>
+  <!--Articel header-->
+  <header class="w3-display-container bkg">
+    <h1 class="text1 w3-center display">Traditional OCR vs AI-powered OCR</h1>
+  </header>
+
+  <!-- Article content-->
+  <div class="w3-container display strt">
+    <div class="w3-left w3-col m10 l10 s8">
+        <p><img src="images/man1.jpg" alt="not supported" width="15%" class="w3-circle">
+         <strong>Mukesh Sah</strong></p>
+    </div>
+    <div class="w3-right w3-col m2 l2 s4">
+        <p> <strong> Nov 23, 2021</strong><br>5 min read</p>
+    </div>
+    <div style="padding-top: 50px;padding-bottom: 30px;">
+        <img src="images/Art3.jpg" alt="not supported" width="100%">
+    </div>
+    <div>
+        <h1>Introduction</h1>
+        <p>OCR or optical person acknowledgment, is an innovation that can extricate text from a picture (e.g., screen capture, filtered PDF, and so forth) and convert it into advanced text. OCR that we realize today has been around beginning around 1974, however comparative innovation has been around beginning around 1914 when Emanuel Goldberg fostered a machine that can peruse characters for the visually impaired. It's been quite a while from that point forward - it's presently essentially utilized by all businesses as we actually depend on papers (and advanced duplicates).</p>
+        <h1>Traditional OCR</h1>
+        <p>Most organizations are utilizing the conventional OCR which is layout/rule-based, which means, the group behind this innovation needs to invest energy fabricating these principles and formats. The greatest limit of this technique is that it doesn't comprehend the unique circumstance. For instance, if OCR extricated a text directly beneath the mark in the structure called "First Name", it fails to really see what it is. The manner in which it's at present dealt with is that an architect predefines where to precisely look, which means slight changes in the position could break it.</p>
+        <h1>Artificial Intelligence Powered OCR</h1>
+        <p>This is the place where AI comes in and can help. Rather than just aimlessly extricating information, it will assist make with detecting that information. For instance, making an association and relationship between's the situation of those fields and texts in the report. This is particularly useful for charge records since it essentially diminishes the designing assets and mechanizes the standard-making process simply by giving the AI instances of how it ought to be deciphered.</p>
+        <p>At Elevar, we use AI-based OCR and can handle a huge number of structures and sort out what's in the tax document - even the structures that it hasn't seen previously. This permits us to have a more solid framework that can consequently recognize tax documents, reliably extricate the important data so you can trade it in to your duty programming.</p>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="w3-display-container w3-row" style="padding-top:64px;background:#0f0a4d;color:white">
+    <div class="w3-col w3-center l4 m4 s4">
+      <img src="images/footer logo.png" alt="not_supported" class="Footer_logo">
+    </div>
+
+    <div class="w3-col l4 m4 s4">
+      <p style="font-weight: 800;font-size: 17px;">Company</p>
+        <a href="index.html" class="footer_text">Home</a><br>
+        <a href="signin.html" class="footer_text">Signin</a><br>
+        <a href="login.html" class="footer_text">Login</a><br>
+        <a href="legal.html" class="footer_text">Legal Notice</a>
+    </div>
+
+    <div class="w3-col l4 m4 s4">
+      <p style="font-weight: 800;font-size: 17px;">Useful Links</p>
+        <a href="https://www.linkedin.com/company/accounting-elevar" target="_blank" class="footer_text"><i class="fa fa-linkedin w3-hover-opacity"></i> Linkedin</a><br>
+        <a href="#" class="footer_text"><i class="fa fa-facebook-official w3-hover-opacity"></i> Facebook</a><br>
+        <a href="#" class="footer_text"><i class="fa fa-instagram w3-hover-opacity"></i> Instagram</a><br>
+        <a href="#" class="footer_text"><i class="fa fa-twitter w3-hover-opacity"></i> Twitter</a>
+    </div>
+    
+    <div class="w3-container w3-center w3-col m12" style="margin-top: 20px;background-color: #0b072f;height:45px">
+      <p>© Elevar Accounting All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script>
+      // Toggle between showing and hiding the sidebar when clicking the menu icon
+    var mySidebar = document.getElementById("mySidebar");
+    function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+    } else {
+        mySidebar.style.display = 'block';
+    }
+    }
+
+    // Close the sidebar with the close button
+    function w3_close() {
+        mySidebar.style.display = "none";
+    }
+  </script>
+    
+</body>
+</html>

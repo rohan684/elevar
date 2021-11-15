@@ -5,40 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style/design.css">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <script src="https://kit.fontawesome.com/2ca48ba5ba.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style/design.css">
     <title>Home</title>
     <style>
       .bgimg-1 {
           background-position: center;
           background-size: cover;
-          background-image: url("images/bkg.jpg");
+          background-image: url("images/bkg_final2.jpg");
           min-height: 95%;
       }
       .bgimg-2{
         background-position: center;
         background-size: cover;
         background-image: url("images/bkg2.svg");
-        min-height: 95%;
+        min-height: 100%;
       }
       .btn_box{
         padding-left: 20px;
         padding-right: 50px;
       }
       .form_tabel{
-        margin-left: 10%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .btn0{
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-right: 20px;
+        font-size: 12px;
       }
     </style>
 </head>
 <body>
     <!-- Navbar (sit on top) -->
-  <div class="w3-top">
-    <div class="w3-bar w3-card w3-white w3-row" id="myNavbar">
+  <div class="w3-top bar_color">
+    <div class="w3-bar w3-row" id="myNavbar">
       <a href="#" class="w3-bar-item w3-col m2  w3-wide" style="padding-top: 10px;padding-left: 20px;"><img src="images/logo.png" alt="not_supported" class="logo"></a>
       <!-- Right-sided navbar links -->
-      <div class="w3-hide-small w3-col m10" style="padding-top: 5px; padding-bottom: 1%;">
+      <div class="w3-hide-small w3-col m10" style="padding-top: 10px; padding-bottom: 1%;">
         <a href="login.html" class="w3-bar-item w3-hover-text-blue w3-right nav_text" >Login</a>
         <a href="#contactus" class="w3-bar-item w3-hover-text-blue w3-right nav_text" >Contact Us</a>
         <a href="signin.html" class="w3-bar-item w3-hover-text-blue w3-right nav_text">Try Demo</a>
@@ -47,7 +54,7 @@
       <!-- Hide right-floated links on small screens and replace them with a menu icon -->
   
       <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-        <i class="fa fa-bars"></i>
+        <i class="fa fa-bars" style="color: white;"></i>
       </a>
     </div>
   </div>
@@ -62,25 +69,26 @@
   </nav>
 
   <!--Header section with image-->
-  <header class="bgimg-1 w3-display-container display">
-    <div class="w3-content w3-display-container w3-animate-zoom">
-      <h1 class="header_text w3-center">Automate your Accounting with us</h1>
-      <h4 class="header_text2">Elevar is a cloud-based programming that accompanies a document coordinator that your customers will utilize 
+  <header class="bgimg-1 w3-display-container">
+    <div class="w3-content w3-animate-zoom">
+      <h1 class="header_text w3-left">Automate your Accounting</h1>
+      <h4 class="header_text2 w3-left">Elevar is a cloud-based program that accompanies a document coordinator that your customers will utilize 
         and incorporations that take out manual passage into your bookkeeping programming.</h4>
-        <div class=" w3-center">
-          <p><a href="#" class="w3-button w3-round-xxlarge w3-blue w3-padding-large w3-large w3-center w3-margin-top w3-hover-teal">Try Now!</a></p>
+        <div class="w3-left" style="width: 60%;">
+          <p class="first_btns"><a href="#contactus" class="w3-button w3-round-xxlarge w3-blue w3-center w3-margin-top w3-hover-teal btn0">More details</a>
+          <a href="signin.html" class="w3-button w3-round-xxlarge w3-border w3-border-blue w3-center w3-margin-top w3-hover-teal btn0">View demo</a></p>
         </div>
     </div>
   </header>
   <!--Section one-->
-  <div class="w3-container w3-light-grey" style="padding: 70px 15px;">
+  <div class="w3-container" style="padding: 70px 15px;">
     <h3 class="w3-center aa1">Features</h3>
     <h5 class="w3-center aa2">Industry-driving Features and Technology</h5>
     <h6 class="w3-center aa3 display">Elevar's way of thinking is to be inconceivably adaptable. Do you currently like your current frameworks and instruments? 
       Our foundation can incorporate with 1000+ applications.</h6>
     <div class="w3-container display" style="padding-top: 20px;">
-      <div class="aa4 w3-col m7" style="border: 2px solid #0f0a4d; border-radius: 20px;overflow: hidden;">
-        <img src="images/imgs1.png" height="90%" width="90%" id="getImage" class="display" style="padding-top:20px;" alt="not_supported">
+      <div class="aa4 w3-col m7" style="border: 1px solid #0f0a4d; border-radius: 20px;overflow: hidden;">
+        <img src="images/imgs1.png" height="90%" width="90%" id="getImage" class="display w3-animate-left" style="padding-top:20px;" alt="not_supported">
       </div>
       <div class="w3-col m5 btn_box" >
         <div class="w3-col m12" > 
@@ -111,7 +119,7 @@
     <div class="w3-col m7" style="padding-top: 70px;">
       <button class="accordion">Which Accounting Software Do You Work With?</button>
         <div class="panel">
-          <p>We right now support ATX™, ProSeries, Drake, and UltraTax as of now. Lacerte and Axcess are just around the corner!</p>
+          <p>We right now support Tally ERP 9, Zoho Book, Busy Accounting, Giddh and Vyapar as of now. Lacerte and Axcess are just around the corner!</p>
         </div>
 
         <button class="accordion">Can I Use With My Existing Software?</button>
@@ -127,10 +135,10 @@
   </div>
   
   <!--features section-->
-  <div class="w3-container w3-light-grey" style="padding: 40px 15px;">
+  <div class="w3-container" style="padding: 40px 15px;" id="resorces">
     <h3 class="w3-center aa1">Resources</h3>
     <div class="w3-row-padding">
-      <div class="w3-col m4 s12">
+      <div class="w3-col l4 m4 s12">
         <div class="w3-card-4 cards" style="padding-bottom:20px;">
           <div style="overflow: hidden;">
             <img src="images/Article1.jpg" alt="not_supported" class="articleimages">
@@ -139,31 +147,31 @@
             <p class="image_text">Comparing ProSeries vs ATX vs Drake vs UltraTax CS</p>
             <p class="image_text2">All expense programming have distinctive item includes, diverse estimating, various things they are acceptable at.</p>
           </div>
-          <a href="#" class="read_article">Read Article</a>
+          <a href="article2.html" class="read_article">Read Article</a>
         </div>
       </div>
-      <div class="w3-col m4 s12">
+      <div class="w3-col l4 m4 s12">
         <div class="w3-card-4 cards" style="padding-bottom:20px;">
           <div style="overflow: hidden;">
             <img src="images/Article2.jpg" alt="not_supported" class="articleimages">
           </div>
           <div>
-            <p class="image_text">Should my firm move to the cloud ?</p>
+            <p class="image_text">Should my firm move to the cloud in few months ?</p>
             <p class="image_text2">With Covid-19 reaching a conclusion, are there valid justifications why you should in any case move to the cloud ?</p>
           </div>
-          <a href="#" class="read_article">Read Article</a>
+          <a href="article.html" class="read_article">Read Article</a>
         </div>
       </div>
-      <div class="w3-col m4 s12" style="margin-bottom: 40px;">
+      <div class="w3-col l4 m4 s12" style="margin-bottom: 40px;">
         <div class="w3-card-4 cards" style="padding-bottom:20px;">
           <div style="overflow: hidden;">
             <img src="images/Article3.jpg" alt="not_supported" class="articleimages">
           </div>
           <div>
-            <p class="image_text">Traditional OCR vs AI powered OCR</p>
+            <p class="image_text">Traditional OCR vs AI powered OCR difference ?</p>
             <p class="image_text2">You may have known about OCR innovation for some time. what is actually, and how does AI-based OCR contrast?</p>
           </div>
-          <a href="#" class="read_article" style="margin-top: -10px;">Read Article</a>
+          <a href="article3.html" class="read_article" style="margin-top: -10px;">Read Article</a>
         </div>
       </div>
       <button class="image_btn display">See All Articles</button>
@@ -171,9 +179,7 @@
   </div>
 
   <!--Contact us section-->
-  <div class="w3-display-container bgimg-" style="padding: 40px 15px;background-color: #21D4FD;
-  background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
-color:white;" id="contactus">
+  <div class="w3-display-container w3-light-grey" style="padding: 40px 15px;" id="contactus">
     <h1 class="w3-center" style="font-weight: 900; font-size: 50px; ">Contact Us</h1>
     <div class="display" style="width: 100%;">
       <table class="form_tabel">

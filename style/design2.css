@@ -1,0 +1,39 @@
+body{
+    line-height: 23px;
+}
+.bkg{
+    background-position: center;
+    margin-top: -20px;
+    background-size: cover;
+    background-image: url("../images/articlebkg.jpg");
+    min-height: 60%;
+}
+.text1{
+    color:white;
+    font-weight: 900;
+    font-size: 45px;
+    padding-top: 100px;
+    width: 40%;
+    line-height: 55px;
+}
+.strt{
+    width: 50%; 
+    padding: 60px 5px;
+}
+@media (max-width:480px){
+    p{
+        text-align: justify;
+    }
+    .strt{
+        width: 90%;
+    }
+    h1{
+        line-height: 35px;
+    }
+    .text1{
+        width:100%;
+    }
+    .bkg{
+        min-height: 40%;
+    }
+}

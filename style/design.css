@@ -4,23 +4,27 @@ body,html{height: 100%;line-height: 1.8;}
 .nav_text{
     font-size: larger;
     text-decoration: none;
-    font-weight: 600;
-    color: #030359;
+    color:white;
+    font-weight: 300;
     margin-right: 35px;
 }
+.bar_color{
+    background: #030359;
+}
 .header_text{
-    padding-top: 150px;
-    font-size: 60px;
+    padding-top: 140px;
+    width:60%;
+    line-height: 1.2;
+    font-size: 50px;
     color: #030359;
     font-weight: 900;
 }
 .header_text2{
     
-    width: 80%;
-    text-align: justify;
-    margin-left: 100px;
-    font-size: 25px;
-    font-weight: 700;
+    width: 50%;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 600;
 }
 .display{
     display: block;
@@ -96,7 +100,9 @@ body,html{height: 100%;line-height: 1.8;}
 }
 .articleimages{
     height: auto;
-    width: auto;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .image_text{
     font-size: 25px;
@@ -254,24 +260,32 @@ span a:hover{
         overflow-x: hidden;
     }
     .bgimg-1{
-        min-height: 70%;
+        min-height: 45%;
+        width: 100%;
+        background: transparent;
+        background-image: url("../images/mobile.jpg");
+        background-size: cover;
     }
     .logo{
         width:30%;
     }
+    .first_btns{
+        display: inline;
+    }
     .header_text{
-        font-size: 32px;
+        font-size: 35px;
+        text-align: center;
+        width: 100%;
         margin-top: -8px;
-        padding-top: 130px;
+        padding-top: 340px;
         font-weight: 900;
         line-height: 30px;
         font-family: Calibri;
     }
     .header_text2{
         width: 100%;
-        font-size: 20px;
+        font-size: 15px;
         text-align: justify;
-        margin-left: 0px;
         padding: 18px;
     }
     .logo_image{
@@ -299,6 +313,7 @@ span a:hover{
     }
     .frm_btn{
         width:40%;
+        margin-top: -10px;
     }
     .Footer_logo{
         width:70%;
