@@ -90,7 +90,7 @@ body,html{height: 100%;line-height: 1.8;}
     transition: max-height 0.2s ease-out;
 }
 .cards{
-    width: 95%;
+    width: 100%;
     padding: 10px;
     margin-top: 10px;
 }
@@ -242,4 +242,66 @@ span a:hover{
 .footer_text:hover{
     opacity: 1;
 }
-  
+.logo{
+    width: 50%;
+}
+.Footer_logo{
+    width:30%;
+    margin-top: 20px;
+}
+@media (max-width:480px){
+    body{
+        overflow-x: hidden;
+    }
+    .bgimg-1{
+        min-height: 70%;
+    }
+    .logo{
+        width:30%;
+    }
+    .header_text{
+        font-size: 32px;
+        margin-top: -8px;
+        padding-top: 130px;
+        font-weight: 900;
+        line-height: 30px;
+        font-family: Calibri;
+    }
+    .header_text2{
+        width: 100%;
+        font-size: 20px;
+        text-align: justify;
+        margin-left: 0px;
+        padding: 18px;
+    }
+    .logo_image{
+        margin-left: 48%;
+    }
+    .btn_box{
+        margin-left: -55px;
+        padding-right: 0px;
+    }
+    .image_btn{
+        margin-top: 200px;
+    }
+    .form_tabel{
+        margin-left: 1%;
+    }
+    .input1{
+        width: 100%;
+        margin-bottom: 6px;
+    }
+    span{
+        margin-left: 20%;
+    }
+    .form_input{
+        width: 60%;
+    }
+    .frm_btn{
+        width:40%;
+    }
+    .Footer_logo{
+        width:70%;
+        margin-top: 50px;
+    }
+}

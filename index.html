@@ -23,17 +23,12 @@
         background-image: url("images/bkg2.svg");
         min-height: 95%;
       }
-      .backg
-      {
-        position: absolute;
-        bottom: 0;
-        background: rgb(0, 0, 0); /* Fallback color */
-        background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-        color: #f1f1f1;
-        width: 60%;
-        padding: 20px;
-        text-align: center;
-        animation: media;
+      .btn_box{
+        padding-left: 20px;
+        padding-right: 50px;
+      }
+      .form_tabel{
+        margin-left: 10%;
       }
     </style>
 </head>
@@ -41,7 +36,7 @@
     <!-- Navbar (sit on top) -->
   <div class="w3-top">
     <div class="w3-bar w3-card w3-white w3-row" id="myNavbar">
-      <a href="#" class="w3-bar-item w3-col m2  w3-wide" style="padding-top: 10px;padding-left: 20px;"><img src="images/logo.png" alt="not_supported" width="50%"></a>
+      <a href="#" class="w3-bar-item w3-col m2  w3-wide" style="padding-top: 10px;padding-left: 20px;"><img src="images/logo.png" alt="not_supported" class="logo"></a>
       <!-- Right-sided navbar links -->
       <div class="w3-hide-small w3-col m10" style="padding-top: 5px; padding-bottom: 1%;">
         <a href="login.html" class="w3-bar-item w3-hover-text-blue w3-right nav_text" >Login</a>
@@ -70,7 +65,7 @@
   <header class="bgimg-1 w3-display-container display">
     <div class="w3-content w3-display-container w3-animate-zoom">
       <h1 class="header_text w3-center">Automate your Accounting with us</h1>
-      <h4 class="header_text2 w3-center">Elevar is a cloud-based programming that accompanies a document coordinator that your customers will utilize 
+      <h4 class="header_text2">Elevar is a cloud-based programming that accompanies a document coordinator that your customers will utilize 
         and incorporations that take out manual passage into your bookkeeping programming.</h4>
         <div class=" w3-center">
           <p><a href="#" class="w3-button w3-round-xxlarge w3-blue w3-padding-large w3-large w3-center w3-margin-top w3-hover-teal">Try Now!</a></p>
@@ -87,21 +82,23 @@
       <div class="aa4 w3-col m7" style="border: 2px solid #0f0a4d; border-radius: 20px;overflow: hidden;">
         <img src="images/imgs1.png" height="90%" width="90%" id="getImage" class="display" style="padding-top:20px;" alt="not_supported">
       </div>
-      <div class="w3-col m5" style="padding-left: 20px;padding-right: 50px;">
-        <div class="w3-col m12" class="w3-center"> 
-          <img src="images/logo.png" alt="not_supported" width="40%" class="display" style="margin-bottom: 20px;padding-top: 10px;">
+      <div class="w3-col m5 btn_box" >
+        <div class="w3-col m12" > 
+          <img src="images/logo.png" alt="not_supported" width="40%" class="display logo_image" style="padding-top: 10px;" >
         </div>
-        <button class="w3-button btn2 display" onclick="imageChange(1)" style="margin-top:10%;" id="btn1">
+        <div class="w3-col m12 s12">
+          <button class="w3-button btn2 display" onclick="imageChange(1)" style="margin-top:10%;" id="btn1">
             <h5 class="aa5"><i class="far fa-edit"></i> Overcome the Costly Errors With AI</h5>
-        </button>
-        <button class="btn2 w3-button  display" onclick="imageChange(2)" id="btn2">
-            <h5 class="aa5"><i class="fas fa-hand-holding-usd"></i> Cut The Back-and Forth in Half</h5>
-        </button>
-        <button class="btn2 w3-button  display" onclick="imageChange(3)" id="btn3">
-            <h5 class="aa5"><i class="fab fa-accusoft"></i> Automate Manual Entry</h5> 
-        </button>
+          </button>
+          <button class="btn2 w3-button  display" onclick="imageChange(2)" id="btn2">
+              <h5 class="aa5"><i class="fas fa-hand-holding-usd"></i> Cut The Back-and Forth in Half</h5>
+          </button>
+          <button class="btn2 w3-button  display" onclick="imageChange(3)" id="btn3">
+              <h5 class="aa5"><i class="fab fa-accusoft"></i> Automate Manual Entry</h5> 
+          </button>
+        </div>
       </div>
-    </div>
+    </div> 
   </div>
 
   <!--FAQ section-->
@@ -135,7 +132,7 @@
     <div class="w3-row-padding">
       <div class="w3-col m4 s12">
         <div class="w3-card-4 cards" style="padding-bottom:20px;">
-          <div >
+          <div style="overflow: hidden;">
             <img src="images/Article1.jpg" alt="not_supported" class="articleimages">
           </div>
           <div>
@@ -147,26 +144,26 @@
       </div>
       <div class="w3-col m4 s12">
         <div class="w3-card-4 cards" style="padding-bottom:20px;">
-          <div>
+          <div style="overflow: hidden;">
             <img src="images/Article2.jpg" alt="not_supported" class="articleimages">
           </div>
           <div>
             <p class="image_text">Should my firm move to the cloud ?</p>
-            <p class="image_text2">With Covid-19 reaching a conclusion, are there valid justifications why you should in any case move to the cloud?</p>
+            <p class="image_text2">With Covid-19 reaching a conclusion, are there valid justifications why you should in any case move to the cloud ?</p>
           </div>
           <a href="#" class="read_article">Read Article</a>
         </div>
       </div>
-      <div class="w3-col m4 s12">
+      <div class="w3-col m4 s12" style="margin-bottom: 40px;">
         <div class="w3-card-4 cards" style="padding-bottom:20px;">
-          <div>
+          <div style="overflow: hidden;">
             <img src="images/Article3.jpg" alt="not_supported" class="articleimages">
           </div>
           <div>
             <p class="image_text">Traditional OCR vs AI powered OCR</p>
-            <p class="image_text2">You may have known about OCR innovation for some time now. what is actually, and how does AI-based OCR contrast?</p>
+            <p class="image_text2">You may have known about OCR innovation for some time. what is actually, and how does AI-based OCR contrast?</p>
           </div>
-          <a href="#" class="read_article">Read Article</a>
+          <a href="#" class="read_article" style="margin-top: -10px;">Read Article</a>
         </div>
       </div>
       <button class="image_btn display">See All Articles</button>
@@ -179,7 +176,7 @@
 color:white;" id="contactus">
     <h1 class="w3-center" style="font-weight: 900; font-size: 50px; ">Contact Us</h1>
     <div class="display" style="width: 100%;">
-      <table style="margin-left: 10%;">
+      <table class="form_tabel">
         <form action="#" method="get">
             <tr class="w3-row">
                 <td class="w3-half"><input type="text" placeholder="Name*" name="Name" class="input1" /required></td>
@@ -215,11 +212,11 @@ color:white;" id="contactus">
 
   <!-- Footer -->
   <footer class="w3-display-container w3-row" style="padding-top:64px;background:#0f0a4d;color:white">
-    <div class="w3-col w3-center l4 m4 s6">
-      <img src="images/footer logo.png" alt="not_supported" >
+    <div class="w3-col w3-center l4 m4 s4">
+      <img src="images/footer logo.png" alt="not_supported" class="Footer_logo">
     </div>
 
-    <div class="w3-col l4 m4 s3">
+    <div class="w3-col l4 m4 s4">
       <p style="font-weight: 800;font-size: 17px;">Company</p>
         <a href="#" class="footer_text">Home</a><br>
         <a href="signin.html" class="footer_text">Signin</a><br>
@@ -227,7 +224,7 @@ color:white;" id="contactus">
         <a href="legal.html" class="footer_text">Legal Notice</a>
     </div>
 
-    <div class="w3-col l4 m4 s3">
+    <div class="w3-col l4 m4 s4">
       <p style="font-weight: 800;font-size: 17px;">Useful Links</p>
         <a href="https://www.linkedin.com/company/accounting-elevar" target="_blank" class="footer_text"><i class="fa fa-linkedin w3-hover-opacity"></i> Linkedin</a><br>
         <a href="#" class="footer_text"><i class="fa fa-facebook-official w3-hover-opacity"></i> Facebook</a><br>
