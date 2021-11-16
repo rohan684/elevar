@@ -8,6 +8,12 @@ body,html{height: 100%;line-height: 1.8;}
     font-weight: 300;
     margin-right: 35px;
 }
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("../images/bkg_final2.jpg");
+    min-height: 95%;
+}
 .bar_color{
     background: #030359;
 }
@@ -255,29 +261,38 @@ span a:hover{
     width:30%;
     margin-top: 20px;
 }
+.Btn_for_mobile2{
+    display: none;
+}
 @media (max-width:480px){
     body{
         overflow-x: hidden;
     }
     .bgimg-1{
-        min-height: 45%;
+        min-height: 50%;
+        background-color: #030359;
         width: 100%;
-        background: transparent;
         background-image: url("../images/mobile.jpg");
         background-size: cover;
     }
     .logo{
         width:30%;
     }
-    .first_btns{
-        display: inline;
+    .Btn_for_mobile{
+        display: none;
     }
+    .Btn_for_mobile2{
+        display: inline;
+        margin-left: 27px;
+        margin-top:-15px;
+    }
+    
     .header_text{
         font-size: 35px;
         text-align: center;
         width: 100%;
         margin-top: -8px;
-        padding-top: 340px;
+        padding-top: 360px;
         font-weight: 900;
         line-height: 30px;
         font-family: Calibri;
@@ -290,6 +305,9 @@ span a:hover{
     }
     .logo_image{
         margin-left: 48%;
+    }
+    .aa3{
+        width: 100%;
     }
     .btn_box{
         margin-left: -55px;
@@ -313,7 +331,9 @@ span a:hover{
     }
     .frm_btn{
         width:40%;
-        margin-top: -10px;
+        padding-left: 2px;
+        padding-right: 2px;
+        margin-top: 0px;
     }
     .Footer_logo{
         width:70%;
