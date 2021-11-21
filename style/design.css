@@ -8,6 +8,13 @@ body,html{height: 100%;line-height: 1.8;}
     font-weight: 300;
     margin-right: 35px;
 }
+.logo{
+    text-decoration: none;
+    color:white;
+    font-weight: 700;
+    font-size: 20px;
+    padding-left: 0px;
+}
 .bgimg-1 {
     background-position: center;
     background-size: cover;
@@ -277,6 +284,8 @@ span a:hover{
     }
     .logo{
         width:30%;
+        font-size: 12px;
+        padding-left: 0px;
     }
     .Btn_for_mobile{
         display: none;
@@ -308,6 +317,10 @@ span a:hover{
     }
     .aa3{
         width: 100%;
+    }
+    .aa5{
+        text-align: left;
+        font-size: 18px;
     }
     .btn_box{
         margin-left: -55px;
